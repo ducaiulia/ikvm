@@ -1,0 +1,11 @@
+language: generic
+ 
+ jdk:
+    - openjdk6
+ 
+ script: nant    
+ 
+ # safelist
+ branches:
+    only:
+    - v0.47

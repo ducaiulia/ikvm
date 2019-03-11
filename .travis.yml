@@ -1,4 +1,11 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
+language: generic
+ 
+ jdk:
+    - openjdk6
+ 
+ script: nant    
+ 
+ # safelist
+ branches:
+    only:
+    - v0.47

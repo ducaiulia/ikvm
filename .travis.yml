@@ -1,9 +1,5 @@
-language: generic
- 
- jdk:
-    - openjdk6
- 
- script: nant    
+ language: csharp  
+ solution: ikvm9.sln
  
  # safelist
  branches:

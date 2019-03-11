@@ -1,7 +1,3 @@
- language: csharp  
- solution: ikvm9.sln
- 
- # safelist
- branches:
-    only:
-    - v0.47
+language: csharp
+solution: ikvm9.sln
+

@@ -1,5 +1,5 @@
 version: 1.0.{build}
-os: Visual Studio 2008
+os: Previous Visual Studio 2013
 build:
  project: ikvm9.sln
 test: off

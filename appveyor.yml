@@ -1,12 +1,13 @@
 version: 1.0.{build}
 os: Visual Studio 2013
 install:
+- choco install nant
 before_build:
-- cd /d C:\Windows
-- echo @echo off "C:\Program Files (x86)\NAnt\bin\NAnt.exe" %* > nant.bat
+- refreshenv
 - set JAVA_HOME=C:\Program Files\Java\jdk1.6.0
 - set PATH=C:\Program Files\Java\jdk1.6.0\bin;%PATH%
-- cd /d C:\projects\ikvm
+- ps: wget http://www.frijters.net/openjdk-8u45-b14-stripped.zip -OutFile openjdk-8u45-b14-stripped.zip
+- ps: Expand-Archive .\openjdk-8u45-b14-stripped.zip -DestinationPath ..\
 build_script:
 - nant
 test: off
